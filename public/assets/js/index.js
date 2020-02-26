@@ -3,8 +3,8 @@ var head 			  = $('#bb8head');
 var shadow 		  = $('#bb8shadow');
 var outline 		= $('#bb8outline');
 var width 		  = $(window).width() / 2;
-var speedMulti  = 1.5;
-var rotateMulti = 15;
+var speedMulti  = 1;
+var rotateMulti = 1;
 var speed;
 var floorLine1  = $('.floor_line1'),
 		floorLine2  = $('.floor_line2'),
@@ -25,8 +25,8 @@ $(document).on("mousemove", function(event) {
 	roll.play();
 	speed = event.pageX / width;
 	speed = speed * speedMulti;
-	if (speed > 3) {
-		speed = 3;
+	if (speed >1) {
+		speed = 1;
 	}
 	roll.timeScale(speed)
 	TweenMax.to(head,0,{
@@ -63,7 +63,7 @@ floorMove2.pause();
 floorMove3.pause();
 
 // Build animation to roll BB-8's body
-var roll = TweenMax.to(body,2,{
+var roll = TweenMax.to(body,3,{
 	rotation: 360,
 	transformOrigin: "50% 50%",
 	ease:Linear.easeNone,
@@ -85,7 +85,7 @@ function jump(element,height) {
 	});
 }
 $(document).on("click", function(){
-	var bodyHeight = 50;
+	var bodyHeight = 30;
 	jump(body,bodyHeight);
 	jump(shadow,bodyHeight);
 	jump(outline,bodyHeight);
