@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/png.png">
   <link rel="icon" type="image/png" href="./assets/img/png.png">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
   
   <title>
     AAVISHKAR 
@@ -40,7 +42,11 @@
   
 </head>
 
-<body class="index-page"  style=" background-color: #000000;">
+<body class="index-page"  style=" background-image: url('./assets/img/background.jpg'); background-repeat: no-repeat; background-color: #000000;">
+    
+
+
+
  
     <style> 
         b{
@@ -50,11 +56,24 @@
         </style>
         <style type="text/css"> 
           p#countdown { 
-            display:table-caption;
-            font-size: 30px; text-align: center; margin: 0; padding: 0;background-color: #eaf818;
-          background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
-          border-radius: 25px;
-          width: 200%;height:100%;margin-top: 200%;margin-left: 5%;}
+                display: table-caption;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #a78b00;
+    background-image: linear-gradient(315deg, #a78b00 0%, #ffda05 74%);
+    border-radius: 25px;
+    width: 30vw;
+    height: 100%;
+    margin-top: 45vh;
+    margin-left: 6%;
+
+
+
+
+
+            }
           table { width: 25%; margin: 0 auto; }
           thead > tr {background-color: #aaa; }
           td, th { text-align: center; padding: 1em; border: 1px solid #ccc; }
@@ -247,17 +266,17 @@
     
 
   <!-- Navbar -->
-  <nav style="max-height: 125px;" class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
-    <div class="container">
+  <nav style="max-height: 18vh;" class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="30">
+    <div class="container" style="margin-left: 1.5%;margin-right: 1.5%;max-width: 100%;">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="#">
-          <span><img style=" box-sizing: content-box; height:80%;width:40%;" src="./assets/img/klelogo.png">
+        <a class="navbar-brand" href="#"  style="margin-right: 15%;">
+          <span style="margin-right: 11vw;"><img style=" box-sizing: content-box; height:30%;width:30%;" src="./assets/img/klelogo.png">
           </span> 
+          <span style="margin-right: 11vw;"><img style="box-sizing: content-box; height: 60%;width:32%;" src="./assets/img/GOLDEN.png">
+          </span>
+          <span style="margin-right:11vw;"><img style=" box-sizing: content-box; height: 40%;width:20%;" src="./assets/img/cbapngwhite.png">
+          </span>
           
-          <span><img style=" box-sizing: content-box; height: 78%;width:25%;" src="./assets/img/cbapngwhite.png">
-          </span>
-          <span><img style="box-sizing: content-box; height: 78%;width:25%;" src="./assets/img/whitecbacreations.png">
-          </span>
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar bar1"></span>
@@ -293,10 +312,17 @@
               <p class="d-lg-none d-xl-none">Facebook</p>
             </a>
           </li>
+          
           <li class="nav-item p-0">
             <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/cbacreations/?hl=en" target="_blank">
               <i class="fab fa-instagram"></i>
               <p class="d-lg-none d-xl-none">Instagram</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Add us on snapchat" data-placement="bottom" href="https://www.snapchat.com/add/aavishkar2016" target="_blank">
+              <i class="fab fa-snapchat-square"></i>
+              <p class="d-lg-none d-xl-none">Snapchat</p>
             </a>
           </li>
           <li class="dropdown nav-item">
@@ -321,14 +347,14 @@
           <a href="components/committee.html" class="dropdown-item">
             <i class="tim-icons icon-badge"></i>Stream Heads
         </a>
-              <a href="#contact" class="dropdown-item">
+              <a href="./index.html#contact1" class="dropdown-item">
                 <i class="tim-icons icon-single-02"></i>Contact Us
               </a>
             </div>
           </li>
                 
                   <li class="nav-item">
-            <a class="nav-link btn btn-default d-none d-lg-block" href="javascript:void(0)" onclick="scrollToDownload()">
+            <a class="nav-link btn btn-default d-none d-lg-block" href="#register" onclick="scrollToDownload()">
               <i class="tim-icons icon-atom"></i>Register Now
             </a>
           </li>
@@ -339,28 +365,28 @@
   <!-- End Navbar -->
 
   <div class="wrapper" >
-    <div class="page-header header-filter" style="height:1000vh;">
+    <div class="page-header header-filter" style="height:75vh;min-height: 60vh">
       
-      <div class="squares square5"  style="width:30%;opacity: 1;background:white;bottom: 45%; left:10%;height: fit-content;animation: move-left-right 3s infinite">
+     <!-- <div class="squares square5"  style="width:30%;opacity: 1;background:white;bottom: 45%; left:10%;height: fit-content;animation: move-left-right 3s infinite">
         <img src="./assets/img/Gol.jpg">
       </div>
-      
+      -->
       <div class="container">
 
           
 
         
-        <div class="content-center brand" style="left:65%;text-align: right;font-family:blade;">
+        <div class="content-left brand" style="left:65%;text-align: right;font-family:blade;">
           <div>
             
               <div class="countdown"  >
-              <h1 style="visibility:hidden;">Countdown to <span id="end"></span></h1> 
+               
               <p style="font-family: 'Orbitron', sans-serif;" id="countdown"> 
               <span>
-                 <span style="font-size:40pt;color: rgb(211, 65, 8);" id="days"></span><span  style="color: rgb(211, 65, 8);">days </span><br>
-                 <span style="font-size:28pt;color: rgb(211, 65, 8);" id="hours"></span ><span  style="color: rgb(211, 65, 8);">h</span><br>
-                  <span style="font-size:28pt;color: rgb(211, 65, 8);" id="minutes"></span> <span  style="color: rgb(211, 65, 8);">m</span><br>
-                  <span style="font-size:28pt;color: rgb(211, 65, 8);" id="seconds"></span><span  style="color: rgb(211, 65, 8);">s</span><br>
+                 <span style="font-size:3vw;color: rgb(211, 65, 8);" id="days"></span><span  style="color: rgb(211, 65, 8);"> days </span>
+                 <span style="font-size:2.5vw;color: rgb(211, 65, 8);" id="hours"></span ><span  style="color: rgb(211, 65, 8);"> h</span>
+                  <span style="font-size:2.5vw;color: rgb(211, 65, 8);" id="minutes"></span> <span  style="color: rgb(211, 65, 8);"> m</span>
+                  <span style="font-size:2.5vw;color: rgb(211, 65, 8);" id="seconds"></span><span  style="color: rgb(211, 65, 8);"> s</span>
               </span>
               </p> 
           </div>
@@ -446,8 +472,8 @@
                
                 
              
-             <p style="color:yellow;">
-                <strong>KLE CBA</strong> presents to you <strong>AAVISHKAR</strong>
+             <p style="color:#24a4d8;">
+                <strong>KLE CBA</strong> presents to you 
                 <br>
                 
  
@@ -462,12 +488,17 @@
 
 
               </div>
+              <h2 class="mb-2" align="center" style="font-size: 30px;"><strong>on 20th and 21st March 2020</strong></h2><br>
+              
  </p>
 <p style="color:white;">
-<strong>Aavishkar</strong> is the mega event hosted by KLE CBA. It is a national level management fest organized for all the BBA colleges across India. It is purely a management fest where in students belonging to commerce and allied fields such as Human resource, Finance, and Marketing participate in the event that involves skills similar to those which they face in the corporate world. It is a great platform for the students where they will improve their creative and management skills which will help them to be prepared for their career.
+<strong id="contact1">Aavishkar</strong> is the mega event hosted by KLE CBA. It is a national level management fest organized for all the BBA colleges across India. It is purely a management fest where in students belonging to commerce and allied fields such as Human resource, Finance, and Marketing participate in the event that involves skills similar to those which they face in the corporate world. It is a great platform for the students where they will improve their creative and management skills which will help them to be prepared for their career.<br><br>
+<b><strong>Cash prize of Rs. 25000 for the GC winning team.</strong> </b>
+
+
              </p><br>
              
-             <div><h2 style="color:#1d8cf8;font-size: 25px;">
+             <div ><h2 style="color:#1d8cf8;font-size: 25px;">
               <strong>Event Coordinators :</strong> 
           </h2>
       
@@ -506,7 +537,7 @@
 
               <div class="col-sm-6">
                 <a href="components/deathlyhallows.html">
-                  <img src="assets/img/dh1.jpg" alt="Image" class="img-raised">
+                  <img src="assets/img/DHF1.jpg" alt="Image" class="img-raised">
                 </a>
                
                 <a href="components/deathlyhallows.html" class="btn btn-simple btn-primary btn-round">DEATHLY HALLOWS</a>
@@ -533,7 +564,7 @@
                 <div class="col-sm-6">
                     <br/>
                     <a href="components/diagonalley.html">
-                  <img src="assets/img/diagon.jpg" alt="Image" class="img-raised">
+                  <img src="assets/img/diago.jpg" alt="Image" class="img-raised">
                 </a>
                     
                     <a href="components/diagonalley.html" class="btn btn-simple btn-primary btn-round">DIAGON ALLEY</a>
@@ -544,7 +575,7 @@
                       <a href="components/dumbledorsarmy.html">
                   <img src="assets/img/da1.jpg" alt="Image" class="img-raised">
                 </a>
-                      <a href="components/dumbledorsarmy.html" class="btn btn-simple btn-primary btn-round">DUMBLEDOR'S ARMY</a>
+                      <a href="components/dumbledorsarmy.html" class="btn btn-simple btn-primary btn-round">DUMBLEDORE'S ARMY</a>
                     </div>
 
                     
@@ -578,10 +609,17 @@
             <h4 class="description">Register Soon. Limited Seats only.</h4>
           </div>
           <div class="text-center col-md-12 col-lg-8">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScKS-qiKVtOCBmgBffDICVEyqypwJpEopOHy98v-g9nnIV55Q/viewform?vc=0&c=0&w=1" class="btn btn-primary btn-round btn-lg" role="button">
+            <button   class="third btn btn-primary btn-round btn-lg">
               Register
-            </a>
-            <!-- <a href="https://www.invisionapp.com/now" target="_blank" class="btn btn-primary btn-lg btn-simple btn-round" role="button">
+            </button>
+           
+           
+        
+
+
+                  <!--href="https://docs.google.com/forms/d/e/1FAIpQLScKS-qiKVtOCBmgBffDICVEyqypwJpEopOHy98v-g9nnIV55Q/viewform?vc=0&c=0&w=1" --> 
+
+<!-- <a href="https://www.invisionapp.com/now" target="_blank" class="btn btn-primary btn-lg btn-simple btn-round" role="button">
           Download PSD/Sketch
         </a> -->
           </div>
@@ -606,7 +644,9 @@
             <a href="https://www.facebook.com/CBAHUBLI/" id="facebook" class="btn btn-icon btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Facebook">
               <i class="fab fa-facebook-square"></i>
             </a>
-           
+            <a href="https://www.snapchat.com/add/aavishkar2016" id="Snapchat" class="btn btn-icon btn-snapchat btn-round btn-lg" data-toggle="tooltip" data-original-title="Snapchat">
+              <i class="fab fa-snapchat-square"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -617,8 +657,7 @@
 
 <!--*********************************************************************************************************************-->
 
-    
-    
+  
 
 
 
@@ -664,7 +703,9 @@
 
     <footer class="footer">
         <div style="text-align:center;">
-          Website Designed by <a target="_blank" href="#"><b style="color:pink;">Team CBA Creations</b></a>
+          Website Designed by <a  href="https://www.instagram.com/cbacreations/?hl=en"><img style=" height:150px;width:160px;" src="./assets/img/whitecbacreations.png">
+          
+        </a>
         </div>
       </footer>
     </div>
@@ -716,7 +757,7 @@
           var d = Math.round(h / 24);
           h = Math.round(h % 24);
        
-          document.getElementById("days").innerHTML = d;
+          document.getElementById("days").innerHTML = d-1;
           document.getElementById("hours").innerHTML = (h < 10) ? "0" + h : h;
           document.getElementById("minutes").innerHTML = (m < 10) ? "0" + m : m;
           document.getElementById("seconds").innerHTML = (s < 10) ? "0" + s : s;
@@ -747,6 +788,23 @@
   <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
   <script>
+    document.querySelector(".third").addEventListener('click', function(){
+
+
+      Swal.fire({
+  title: 'Rules and Regulations',
+  html: "<ul style='margin-top: 1rem; margin-left:1rem; margin-right:1rem; text-align:left;'><li style='color: #000000;'>Each team comprises of 5 members.</li><li style='color: #000000;'>All participants should report to the Registration desk at 8:30 a.m.</li><li style='color: #000000;'>All the participants must carry college ID card & a bonafide letter duly signed by the HOD/Principal/Coordinator.</li><li style='color: #000000;'>Participants must be in Formal Attire for both the days of the event.</li><li style='color: #000000;'>Each and every participant should participate in the team event to qualify for General Championship.</li><li style='color: #000000;'>Last date for registration is 12-3-2020.</li><li style='color: #000000;'>Registration fee for Outstation Colleges (With Accommodation):  Rs. 4500/- (In case any Faculty/Tech Support are accompanying the team Rs.500/- each will be charged.)</li><li style='color: #000000;'>Registration fee for Local Colleges (Without Accommodation):Rs. 2500/-</li><li style='color: #000000;' >Outstation participants should confirm their date of arrival to the mentor assigned on or before 14-03-2020.</li><li style='color: #000000;'>Participants must carry their own Laptops, Pen drives, Dongles and any essentials they deem fit for the course of the Fest.</li><li style='color: #000000;'>After the payment is made, the teams are requested to send us the confirmation of payment including the transaction number through mail.</li><li style='color: #000000;'>Judges decision is final and binding.</li><li style='color: #000000;'>Any participant indulging in any kind of vulgarity, obscenity or any other form of misconduct will lead to disqualification of the entire team.</li><li style='color: #000000;'>All outstation colleges have to carry government ID for accommodation purpose.</li> </ul>",
+  customClass: 'sweetalert-lg',
+  
+  confirmButtonColor: '#3085d6',
+  customClass: 'swal-wide',
+  confirmButtonText: '<a style="color:#000000;" href="https://docs.google.com/forms/d/e/1FAIpQLScKS-qiKVtOCBmgBffDICVEyqypwJpEopOHy98v-g9nnIV55Q/viewform?vc=0&c=0&w=1"><B>Accept</B></a>',
+  width: '70%'
+});
+  
+});
+
+
     $(document).ready(function() {
       blackKit.initDatePicker();
       blackKit.initSliders();
