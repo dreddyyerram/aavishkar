@@ -713,7 +713,53 @@
 
 <!--*********************************************************************************************************************-->
 
+<section style="padding-top:3%;" id="events">
+  <div style="border-radius: 25px;margin-left: 3%;margin-right:3%;     max-width: 95%; " class="container ebg">
+      <br><br><br> <h2 class="mb-2" style="margin-top:0px;font-size: 35px;"><strong></strong></h2>
+      <div class="section section-examples" data-background-color="black">
+          <img src="assets/img/path1.png" class="path">
+          <div class="space-50"></div>
+          <div class="container text-center">
+            <div class="row">
+
+              <div class="col-sm-12" style="background-color: #FFFFFF;">
+                
+                  <img src="assets/img/spon2.png" alt="Image" class="img-raised">
+                
+               
+                
+              </div>
+
+
+              <div class="col-sm-12" style="background-color: #FFFFFF;">
+                
+                  <img src="assets/img/spon1.png" alt="Image" class="img-raised">
+                
+               
+               
+              </div>
+              
+                          
+
+
+
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </section>
   
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -783,46 +829,46 @@
 
 
      <script type="text/javascript">
-      // This function calculates the time from "now" to that given
-      // in the "date_string" parameter.  This difference in time is
-      // expressed in days, hours, minutes, and seconds. 
-      // These values are then used to update HTML elements that have
-      // an id whose value corresponds to the unit of time. 
-      // For example:
-      //
-      //  <span id="days"></span> 
-      //
-      // would contain the number of days from now until the date 
-      // specified in the date_string parameter.
-      //
-      // Additionally, the value provided in the "date_string" parameter
-      // should be included in an HTML element whose id="end-date".
-      var countdown = function(date_string) {
-          var now = new Date();
-          var end = new Date(date_string);
-       
-          var t = end.getTime() - now.getTime();
-          var s = Math.round(t/1000);
-       
-          var m = Math.round(s / 60);
-          s = Math.round(s % 60);
-       
-          var h = Math.round(m / 60);
-          m = Math.round(m % 60);
-       
-          var d = Math.round(h / 24);
-          h = Math.round(h % 24);
-       
-          document.getElementById("days").innerHTML = d-1;
-          document.getElementById("hours").innerHTML = (h < 10) ? "0" + h : h;
-          document.getElementById("minutes").innerHTML = (m < 10) ? "0" + m : m;
-          document.getElementById("seconds").innerHTML = (s < 10) ? "0" + s : s;
+      
+
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 20, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+ 
+
+  document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
           document.getElementById("end").innerHTML = end.toString().split(' ').splice(1, 4).join(' ');
-      }
-      window.onload = function() {
-          countdown("03/20/2020");
-          setInterval(countdown, 1000, "03/20/2020");
-      }
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+      
       </script>
 
 
